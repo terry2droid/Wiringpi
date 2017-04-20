@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Khadas Access GPIO</string>
+    <string name="version_info_title">Version</string>
+    <string name="version_info">This application is only for Khadas Vim</string>
+    <string name="version_unknown">Unknown Version</string>
+    
+    <string name="gpioh5">GPIOH_5</string>
+    <string name="gpioh6">GPIOH_6</string>
+    <string name="gpioh7">GPIOH_7</string>
+    <string name="gpioh8">GPIOH_8</string>
+    <string name="gpioh9">GPIOH_9</string>
+    <string name="gpioao6">GPIOAO_6</string>
+    
+    <string name="gpio_input">Input</string>
+    <string name="gpio_output">Output</string>
+    <string name="gpio_level">Level:</string>
+    <string name="gpio_direction">Direction:</string>
+    <string name="gpio_low">Low</string>
+    <string name="gpio_high">High</string>
+    <string name="gpio_read_state">Read GPIO State:</string>
+</resources>

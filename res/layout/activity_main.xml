@@ -1,0 +1,658 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   
+
+    <LinearLayout
+       android:id="@+id/layout_gpioh5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioh5"
+          android:textColor="@android:color/holo_red_dark" />
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="17sp"
+          android:paddingLeft="30dip"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioh5_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioh5_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioh5_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioh5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioh5_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioh5_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioh5_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioh5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioh5_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+  <LinearLayout
+       android:id="@+id/layout_gpioh6"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioh6"
+          android:textColor="@android:color/holo_red_dark" />
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="30dip"
+          android:textSize="17sp"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioh6_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioh6_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioh6_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioh6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioh6_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioh6_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioh6_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioh6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioh6_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+       <LinearLayout
+       android:id="@+id/layout_gpioh7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioh7" 
+          android:textColor="@android:color/holo_red_dark"/>
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="30dip"
+          android:textSize="17sp"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioh7_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioh7_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioh7_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioh7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioh7_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioh7_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioh7_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioh7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioh7_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+  <LinearLayout
+       android:id="@+id/layout_gpioh8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioh8" 
+          android:textColor="@android:color/holo_red_dark"/>
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="30dip"
+          android:textSize="17sp"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioh8_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioh8_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioh8_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioh8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioh8_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioh8_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioh8_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioh8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioh8_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+            
+   <LinearLayout
+       android:id="@+id/layout_gpioh9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioh9" 
+          android:textColor="@android:color/holo_red_dark"/>
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="30dip"
+          android:textSize="17sp"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioh9_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioh9_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioh9_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioh9"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioh9_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioh9_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioh9_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioh9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioh9_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+  
+    <LinearLayout
+       android:id="@+id/layout_gpioao6"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="15dip"
+       android:paddingLeft="15dip"
+       android:orientation="horizontal">
+       
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:text="@string/gpioao6" 
+          android:textColor="@android:color/holo_red_dark"/>
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="18dip"
+          android:textSize="17sp"
+          android:text="@string/gpio_direction" />
+       <RadioGroup
+          android:id="@+id/rdg_gpioao6_direction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dip"
+          android:textSize="17sp"
+          android:contentDescription="@string/gpio_direction">
+          <RadioButton
+              android:id="@+id/rdb_gpioao6_input"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_input"/>
+          <RadioButton
+              android:id="@+id/rdb_gpioao6_output"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="13sp"
+              android:textColor="@android:color/holo_blue_dark"
+              android:text="@string/gpio_output" />              
+       </RadioGroup>
+ 
+      
+       <LinearLayout
+          android:id="@+id/output_gpioao6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dip"
+          android:visibility="visible"
+          android:orientation="horizontal">
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_level" />
+         <RadioGroup 
+            android:id="@+id/rdg_gpioao6_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:contentDescription="@string/gpio_level">
+            <RadioButton
+               android:id="@+id/rdb_gpioao6_low"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_low"/>
+            <RadioButton
+               android:id="@+id/rdb_gpioao6_high"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:textSize="13sp"
+               android:textColor="@android:color/holo_blue_dark"
+               android:text="@string/gpio_high" />              
+         </RadioGroup>
+      </LinearLayout> 
+     
+      <LinearLayout
+         android:id="@+id/input_gpioao6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dip"
+         android:visibility="gone"
+         android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/gpio_read_state" />
+         <TextView
+            android:id="@+id/txv_gpioao6_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="0" />
+      </LinearLayout>
+      
+  </LinearLayout>
+   
+
+</LinearLayout>
